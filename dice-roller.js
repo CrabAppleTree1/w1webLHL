@@ -3,17 +3,17 @@
 
 let timesToRoll = 0
 let rolls = []
-//if valid 3rd element, continue
-process.argv[2] ? timesToRoll = process.argv[2] : console.log('invalid input'); process.exit()
+
+process.argv[2] ? timesToRoll = process.argv[2] : console.log('invalid input')
 
 console.log(`Rolled ${timesToRoll} dice: `)
-for(let i = 0; i < timesToRoll; i++){
+for (let i = 0; i < timesToRoll; i++) {
 
   rolls[i] = Math.floor(Math.random() * 6 + 1)
 
 }
 console.log(rolls.join())
- 
 
-//output the rolled values
+
+
 
